@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="container">
+        <fieldset>
+        <h1 class="mainheading">PAYMENT FORM</h1>
+        <hr>
+        <!--personal information-->
+        <h2>PESONAL INFORMATION</h2>
+        <p>NAME : <input type="text" name="NAME"placeholder="write your name" required></p>
+    </fieldset>
+       <fieldset>
+        <legend>Gender</legend>
+       
+        <p>
+            Male <input type="radio" name="gender" required id="102">Female<input type="radio" name="gender" required id="101"> Others <input type="radio" name="gender" required id="103">
+         </p>
+    </fieldset>
+    <fieldset>
+        <p>
+            Date OF Birth:<input type="date" name="date" required id="108">
+        </p>
+        </fieldset>
+    <fieldset>
+        <p>
+            Address: <br><textarea name="adress" id="address" placeholder="Write your Address" required id="104" cols="20" rows="5" ></textarea>
+           
+           
+    </fieldset>
+    <fieldset>
+    <p>
+        Email: <input type="email" name="email" placeholder="Write your Email" required  id="105"> 
+     </p>
+    </fieldset>
+    <fieldset>
+        <p>
+            PIN: <input type="number" name="pin"placeholder="***" required id="106">
+        </p>
+    </fieldset>
+    <hr>
+    <!--!PAYMENT INFORMATION-->
+    <fieldset>
+    <h2>PAYMENT INFORMATIOMN</h2>
+    <p>
+        Card type:
+        <select name="card_type" required id="107">
+            <option value="">---select a card type---</option>
+            <option value="visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+        </select>
+        
+    </p>
+    <p>
+        Card number:<input type="number" name="Card_number" placeholder="****-****-****-****" required id="108">
+    </p>
+    
+    </p>
+    <p>CVV:<input type="password" name="password" placeholder="***" required id="109">
+    </p>
+    <div>
+    <input type="submit" value="PAY">
+</div>
+</fieldset>
+    </form>
+</div>
+</body>
+</html>

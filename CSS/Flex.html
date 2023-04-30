@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .navigation{
+            background-color: rgb(131, 95, 239);
+            height: 60px  
+        }
+        .logo{
+             height: 53px ;
+        } 
+    
+        .menu{
+            padding: 5px 0px;
+            height: 55px;
+            display: flex;
+        }
+        ul{
+            color: aliceblue;
+            display: flex;
+            padding: 0px 300px;     
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        ul li a:hover{
+                text-decoration: underline;
+                color: rgb(64, 197, 126);
+                font-weight: bolder;
+
+
+        }
+            
+        
+        ul li{
+            padding: 0px 23px;
+            list-style: none;
+            
+        }
+        h2 ,h3{
+            text-align: center;
+        }
+        h2{
+             font-size: 30px;
+        }
+       
+        .container{
+            display: flex;
+           justify-content: center;
+            flex-direction: row;
+            /* align-items:flex-start; */
+            flex-wrap: wrap;
+        }
+        .profile{
+            justify-content: start;
+            
+        }
+        .box{
+            padding: 20px 20px 20px;
+            border: 2px solid grey; 
+            border-radius: 20px;
+            width: 150px;
+        }
+        .image{
+            border-radius: 20px 20px 0px 0px;
+            height: 200px;
+        }
+        .lines{
+            text-align: center;
+            font-weight: bold;
+            font-family: fantasy;
+        }
+        .image:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="profile">
+
+        <nav class="navigation">
+            <div class="menu">
+                <div class="images">
+                    <img src="https://masaischool.com/img/navbar/logo.svg" class="logo" alt="" >
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            
+            
+        </div> 
+        </nav>
+        
+
+        <h2>Meet your instructor</h2>
+
+        <h3>Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Error omnis quod ipsa!</h3>
+
+    <div class="container">
+        <div class="box1 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="image" alt="" height="200px">
+            <div class="lines">
+           <p> Dr. sahoo </p>
+           <hr>
+           <p>Director curriculum</p>
+                </div>
+        
+        </div>
+
+        <div class="box2 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="image"alt="" height="200px">
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        
+        </div>
+
+        <div class="box3 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="image"alt="" height="200px">
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        
+        </div>
+
+        <div class="box4 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"class="image" alt="" height="200px">
+
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        </div>
+
+        <div class="box4 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"class="image" alt="" height="200px">
+
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        </div>
+
+
+        <div class="box4 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"class="image" alt="" height="200px">
+
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        </div>
+
+        <div class="box4 box"><img src="https://images.unsplash.com/photo-1494869042583-f6c911f04b4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"class="image" alt="" height="200px">
+
+            <div class="lines">
+                <p> Dr. sahoo </p>
+                <hr>
+                <p>Director curriculum</p>
+                     </div>
+        </div>
+
+
+       
+
+    </div>
+    
+
+    
+</div>
+</body>
+</html>

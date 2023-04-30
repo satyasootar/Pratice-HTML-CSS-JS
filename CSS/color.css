@@ -1,0 +1,20 @@
+.Red{
+    /* background: red; */
+    color: rgb(180, 155, 183);
+    height: 344px;
+  
+    background-repeat: round;
+    background-size: contain;
+
+
+}
+.green{
+    /* background: green; */
+    color: aqua;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+    background-size: auto;
+}

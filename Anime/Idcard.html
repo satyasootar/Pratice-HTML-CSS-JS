@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID_CARD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .navigation{
+        display: grid;
+        height: 60px;
+        background-color: aqua;
+        grid-column: initial;
+        grid-template-columns: repeat(2,1fr);
+       
+       
+        
+    }
+    .menu{
+
+        width: 200px;
+        height: 0px;
+    }
+    .menu ul{  
+        display: flex;
+   
+
+    }
+    .menu ul li{
+        text-decoration: none;
+        list-style: none;
+        padding: 19px;
+    }
+    .logo{
+        width: 200px;
+        
+    }
+    /* .toggle-button{
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: grid;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 12px; */
+    
+
+    main{
+        background-color: #C38EF8;
+        min-width: calc(100vh - 60px- 50px);
+    }
+    .idcard{
+         display: grid;
+         justify-content: center;
+         padding: 26px;
+         /* padding-bottom: 16px; */
+         position: relative;
+        
+    }
+    .top{
+        background-color: #7900FF;
+        height: 156px;
+        width: 305px;
+        border-radius: 12px 12px 0px 0px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
+    }
+    .buttom{
+        background-color: rgb(255, 255, 255);
+        height:259px;
+        width: 305px;
+        border-radius:0px 0px 12px 12px;
+        /* display: grid; */
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .image{
+        background-color: rgb(255, 255, 255);
+        height: 100px;
+        width: 100px;
+        position:relative;
+        top: -308%;
+        left: 32.5%;;
+        border-radius: 60px;
+        
+    }
+   .profile{
+        border-radius: 60px;
+        background-color: azure;
+   }
+    
+    .prop{
+        height: 101px;
+        border-radius: 61px;
+        background-color: white;
+    }
+    .buttom p{
+        background-color: rgb(255, 255, 255);
+        font-family: 'Fira Sans', sans-serif;
+        text-align: center;
+    }
+    .name{
+        padding: 48px 0px 0px;
+        margin-bottom: 12px;
+    }
+    .mid{
+        margin-top: 12px;
+        color: #B790BC;
+    }
+    .low{
+         font-size: smaller;
+         padding: 12px;
+    }
+    button {
+        border-radius: 12px;
+        height: 29px;
+        width: 120px;
+        display: grid;
+        margin: 0 32%;
+        background-color:#7900FF ;
+        color: white;
+        padding-top: 6px;
+        border: none;
+        font-size: 16px;
+
+    }
+   button:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+    
+    .id{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        
+        
+    }
+    footer{
+        background-color: rgb(236, 175, 242);
+        height: 50px;
+        text-align: center    
+    }
+    footer div{
+         padding-top: 12px;
+         font-size: small;
+    }
+    @media only screen and (min-width: 0px) and (max-width: 1073px)
+    {
+        .id{
+            grid-template-columns: repeat(2, 1fr);  
+        }
+    }
+    @media only screen and (min-width: 0px) and (max-width: 722px)
+{
+    .id{
+            grid-template-columns: repeat(1, 1fr);  
+        }
+}
+@media only screen and (min-width: 0px) and (max-width: 412px)
+{
+    .id{
+            grid-template-columns: repeat(1, 1fr);  
+        }
+}
+</style>
+<body>
+    <nav>
+        <div class="navigation">
+            <div class="logo"> <img src="https://s2.bunnycdn.ru/assets/avatars/OnePiece/001.jpg" alt="" height="60" style="border-radius: 60px;"> </div>
+            
+             
+          <div class="menu">
+             <ul>
+                 <li>Home</li>
+                 <li>Contact</li>
+                 <li>About</li>
+             </ul>
+          </div>   
+         </div>
+    </nav>
+
+
+  <main class="id">
+    <div class="idcard">
+        <div class="top"></div>
+        <div class="buttom">
+            <p class="name">Monkey D. Luffy</p>
+             <p class="mid">Pirate King</p>
+             <p class="low">Luffy is the captain of the Straw Hat Pirates and is best friends with all of them and values them over...</p>
+             <button type="button" onclick= "location.href='https://myanimelist.net/character/40/Luffy_Monkey_D'"
+             >View Profile</button>
+        </div>
+        <div class="image">
+            <div class="profile">
+                <img src="https://i.pinimg.com/originals/35/1c/47/351c47b8ed4bb22254abd1550bc504bd.gif" alt="profile" class="prop">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="idcard">
+        <div class="top"></div>
+        <div class="buttom">
+            <p class="name">
+                Naruto Uzumaki
+            </p>
+             <p class="mid">7th Hokage</p>
+             <p class="low">Born in Konohagakure, a ninja village hidden in the leaves, Naruto Uzumaki was destined for greatness...</p>
+             <button type="button" onclick= "location.href='https://myanimelist.net/character/17/Naruto_Uzumaki?q=naruto%20uzumaki&cat=character'"
+             >View Profile</button>
+        </div>
+        <div class="image">
+            <div class="profile">
+                <img src="https://pa1.narvii.com/6192/39a741b7e9f8e087ccffbce3b2d95e2089d7a2f4_00.gif" alt="profile" class="prop">
+            </div>
+        </div>
+    </div>
+
+    <div class="idcard">
+        <div class="top"></div>
+        <div class="buttom">
+            <p class="name">Ichigo Kurosaki</p>
+             <p class="mid">Soul Reaper</p>
+             <p class="low">When Ichigo first becomes a Shinigami, his Zanpakutō is a standard-looking katana...</p>
+             <button type="button" onclick= "location.href='https://myanimelist.net/character/5/Ichigo_Kurosaki?q=kurosaki%20&cat=character'"
+             >View Profile</button>
+        </div>
+        <div class="image">
+            <div class="profile">
+                <img src="https://pa1.narvii.com/6531/921249377179b39d5f64e686a3b681b950f68990_hq.gif" alt="profile" class="prop">
+            </div>
+        </div>
+    </div>
+
+    <div class="idcard">
+        <div class="top"></div>
+        <div class="buttom">
+            <p class="name">Izuku Midoriya</p>
+             <p class="mid">Super Hero</p>
+             <p class="low">Izuku Midoriya is the main protagonist of Boku no Hero Academia. Though originally born...</p>
+              <button type="button" onclick= "location.href='https://myanimelist.net/character/117909/Izuku_Midoriya?q=izuku%20mid&cat=character'"
+              >View Profile</button>
+        </div>
+        <div class="image">
+            <div class="profile">
+                <img src="https://media.tenor.com/hDgfeP6zDh0AAAAC/midoriya-deku.gif" alt="profile" class="prop">
+            </div>
+        </div>
+    </div>
+
+    <div class="idcard">
+        <div class="top"></div>
+        <div class="buttom">
+            <p class="name">Eren Yeager</p>
+             <p class="mid">Attack Titan</p>
+             <p class="low">Eren is Shingeki no Kyojin's protagonist. His childhood friend, Mikasa...</p>
+             <button type="button" onclick= "location.href='https://myanimelist.net/character/40882/Eren_Yeager?q=eren&cat=character'"
+             >View Profile</button>
+        </div>
+        <div class="image">
+            <div class="profile">
+                <img src="https://i.pinimg.com/originals/45/fd/79/45fd79710f44cac438dbd438bbbaeb43.gif" alt="profile" class="prop">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        www.satyasootar.com &copy; All Rights Reserved
+    </div>
+</footer>
+    
+
+</body>
+</html>
