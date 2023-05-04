@@ -43,8 +43,7 @@
 // var age = 17;
 // console.log((age >= 18)? 'you can vote' : 'you cant vote');
 
-// ?------------Switch statment--------------
-
+// ?------------Switch statment---------------------
 // var area = 'Triangle';
 // var PI = 3.14, l=5, b=4, r=3;
 
@@ -64,7 +63,7 @@
 
 // }
 
-// ?--------------While loop------------
+// ?--------------While loop--------------------
 
 // var num = 0;
 // block scope
@@ -81,7 +80,7 @@
 //     num++;
 // }while( num <= 10);
 
-// ?------------For loop-----------
+// ?------------For loop-------------------------
 
 // for(var num = 0; num <= 10;  num++){
 //     console.log(num);
@@ -98,7 +97,7 @@
     
 //  }
   
-//? --------------function---------------
+//? --------------function-------------------------
 
 // function sum(){
 //     var a=20, b=30;    // Defining a function
@@ -108,7 +107,7 @@
 
 // sum()                  // calling a function
 
-//*----------Anothr way----------------------
+//*----------Anothr way-----------------------------
 
 // function sum(a,b){           // a b are parameter
 //     var total=a+b;
@@ -119,7 +118,7 @@
 // sum(23,34);
 // sum(12,12)         
 
-//*--------------function expression--------------
+//*--------------function expression----------------
 
 // function sum(a,b){
 //     return total = a+b;
@@ -127,7 +126,7 @@
 // var funExp = sum(5,15);
 // console.log(funExp);
 
-//*----------------anonymous function-------------
+//*----------------anonymous function---------------
 
 // var funExp = function(a,b){
 //     return total = a+b;
@@ -135,7 +134,7 @@
 // console.log(funExp(15,15));
 
 
-//?---------------ECMA script---------------------
+//?---------------ECMA script-----------------------
 
 // *T--------------Template liternal----------------
 
@@ -143,11 +142,11 @@
 
 //  for (let num = 0; num < 11; num++) {
 //     let table = 8;
-//     console.log( ' ${table} * ${num} = &{table * num}' );
+//     console.log( ` ${table} * ${num} = ${table * num}` );
     
 //   }
 
-//*------------ Default Parameters--------------------
+//*------------ Default Parameters------------------
 
 // function mult(a,b){
 //     return a*b;
@@ -156,5 +155,106 @@
 
 //*--------------Fat arrow Function-----------------
 
-// const sum = () => 'the sum of the two number is ${(a=3)+(b=5)}'
+// const sum = () => `the sum of the two number is ${(a=3)+(b=5)}`
 // console.log(sum());
+
+//?----------------Array---------------------------- 
+
+// var Names = ['satya', 'omm', 'pokemon']; 
+
+//*!---------------Traversal-------------------------
+
+// var Names = ['satya', 'omm', 'pokemon'];
+// console.log(Names[Names.length-1]);
+
+// console.log(Names.length);
+
+//*------------------For loop--------------------
+
+// var Names = ['satya', 'omm', 'pokemon'];
+
+// for( var num=0;num < Names.length; num++){
+//     console.log(Names[num]);  
+// }
+
+//*---------------For in loop--------------------
+
+//var Names = ['satya', 'omm', 'pokemon'];
+
+// for(let elements in Names){   //Return index number
+//     console.log(elements)
+// }
+
+//*---------------For of loop--------------------
+// var Names = ['satya', 'omm', 'pokemon'];
+
+// for(let elements of Names){
+//     console.log(elements)
+// }
+
+//*---------------ForEach loop--------------------
+
+
+// var Names = ['satya', 'omm', 'pokemon'];
+// Names.forEach(function(element ,index, array){
+//       console.log(element + "index : " + index + " " + array)
+// })
+
+
+//!---------------Searching and Filter in an Arrey-----
+
+    //video was not working
+
+
+//!--------------CURD-----------------------------
+//push---Add items in the last
+// const animals = ['pigs', 'goats', 'sheep'];
+// const count = animals.push("chicken")
+// console.log(animals);
+// console.log(count);
+
+//unshift---Add items in the First
+
+// const animals = ['pigs', 'goats', 'sheep'];
+// const count = animals.unshift("chicken")
+// console.log(animals);
+// console.log(count);
+
+//pop---Remove items in the last
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// console.log(animals);
+// console.log(animals.pop());
+// console.log(animals);
+
+//shift-----Remove items from the first
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// console.log(animals);
+// console.log(animals.shift());
+// console.log(animals);
+
+//Pratice===============
+
+// const months = ['jan', 'march', 'April', 'June', 'July'];
+
+//1.
+// const Newmonths = months.splice(months.length,0,"Dec");
+// console.log(months);
+
+//2.
+// console.log(Newmonths);
+
+//3.
+// const Newmonth = months.splice(1,1,'march');
+
+// const indexOfMonth = months.indexOf('march')
+
+// if(indexOfMonth != -1){
+//     const updateMonth = months.splice(indexOfMonth,1,'March')
+//     console.log(months)
+// }else{
+//     console.log('No such data found')
+// }
