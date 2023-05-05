@@ -57,7 +57,7 @@
 //         case 'Rectangle':
 //             console.log("the area of the Rectangle is : " + l*b);
 //          break;  
-        
+
 //         default:
 //             console.log("Please enter a valid Data") 
 
@@ -87,16 +87,16 @@
 // }
 
 
- //* print 8 table
+//* print 8 table
 
 // var num= 0;
 // var table=10;
 
 //  for (num = 0; num < 11; num++) {
 //     console.log(table +' * '+ num+ ' = '+ ( table*num) );
-    
+
 //  }
-  
+
 //? --------------function-------------------------
 
 // function sum(){
@@ -143,7 +143,7 @@
 //  for (let num = 0; num < 11; num++) {
 //     let table = 8;
 //     console.log( ` ${table} * ${num} = ${table * num}` );
-    
+
 //   }
 
 //*------------ Default Parameters------------------
@@ -203,24 +203,24 @@
 
 //!---------------Searching and Filter in an Arrey-----
 
-    //video was not working
+//video was not working
 
 
 //!--------------CURD-----------------------------
-//push---Add items in the last
+//*push---Add items in the last
 // const animals = ['pigs', 'goats', 'sheep'];
 // const count = animals.push("chicken")
 // console.log(animals);
 // console.log(count);
 
-//unshift---Add items in the First
+//*unshift---Add items in the First
 
 // const animals = ['pigs', 'goats', 'sheep'];
 // const count = animals.unshift("chicken")
 // console.log(animals);
 // console.log(count);
 
-//pop---Remove items in the last
+//*pop---Remove items in the last
 
 // const animals = ['pigs', 'goats', 'sheep'];
 
@@ -228,7 +228,7 @@
 // console.log(animals.pop());
 // console.log(animals);
 
-//shift-----Remove items from the first
+//*shift-----Remove items from the first
 
 // const animals = ['pigs', 'goats', 'sheep'];
 
@@ -236,7 +236,7 @@
 // console.log(animals.shift());
 // console.log(animals);
 
-//Pratice===============
+//*Pratice===============
 
 // const months = ['jan', 'march', 'April', 'June', 'July'];
 
@@ -258,3 +258,50 @@
 // }else{
 //     console.log('No such data found')
 // }
+
+//* MAp----------
+
+// const array = [1, 4, 9, 16, 25];
+
+// let newArr = array.map((curElem,index,arr) =>{
+//     return curElem > 9;
+// })
+// console.log(array);
+// console.log(newArr);
+
+
+//?Pratice=================================
+
+//1.
+
+/* This code is creating an array `arr` with values `[25, 36, 49, 64]`. It then uses the `map()` method
+to create a new array `arrSqr` by iterating over each element of `arr`. The `map()` method takes a
+callback function with three parameters: the current element (`u`), the index of the current element
+(`Omm`), and the original array (`silu`). */
+let arr = [25, 36, 49, 64];
+
+let arrSqr = arr.map((u, Omm, silu) => {
+    console.log("u: ", u);
+    console.log("Omm: ", Omm);
+    console.log("silu: ", silu);
+
+    return Math.sqrt(u) * Omm;
+})
+console.log(arrSqr);
+
+//2.
+
+// let arr = [2, 3, 4, 6, 8];
+
+
+/* This code is creating a new array `arr2` by using the `map()` method to iterate over each element of
+the `arr` array and multiply it by 2. Then, it uses the `filter()` method to filter out the elements
+that are less than or equal to 10. Finally, it logs the filtered array `arr2` to the console. */
+let arr2 = arr.map((curElem) => {
+    return curElem * 2;
+
+}).filter((curElem) => {
+    return curElem > 10;
+
+})
+console.log(arr2);
