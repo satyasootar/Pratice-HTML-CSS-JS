@@ -272,36 +272,151 @@
 
 //?Pratice=================================
 
-//1.
+//1...
 
-/* This code is creating an array `arr` with values `[25, 36, 49, 64]`. It then uses the `map()` method
-to create a new array `arrSqr` by iterating over each element of `arr`. The `map()` method takes a
-callback function with three parameters: the current element (`u`), the index of the current element
-(`Omm`), and the original array (`silu`). */
-let arr = [25, 36, 49, 64];
 
-let arrSqr = arr.map((u, Omm, silu) => {
-    console.log("u: ", u);
-    console.log("Omm: ", Omm);
-    console.log("silu: ", silu);
+// let arr = [25, 36, 49, 64];
 
-    return Math.sqrt(u) * Omm;
-})
-console.log(arrSqr);
+// let arrSqr = arr.map((u, Omm, silu) => {
+//     console.log("u: ", u);
+//     console.log("Omm: ", Omm);
+//     console.log("silu: ", silu);
 
-//2.
+//     return Math.sqrt(u) * Omm;
+// })
+// console.log(arrSqr);
 
+//2...
 // let arr = [2, 3, 4, 6, 8];
 
+// let arr2 = arr.map((curElem) => {
+//     return curElem * 2;
 
-/* This code is creating a new array `arr2` by using the `map()` method to iterate over each element of
-the `arr` array and multiply it by 2. Then, it uses the `filter()` method to filter out the elements
-that are less than or equal to 10. Finally, it logs the filtered array `arr2` to the console. */
-let arr2 = arr.map((curElem) => {
-    return curElem * 2;
+// }).filter((curElem) => {
+//     return curElem > 10;
 
-}).filter((curElem) => {
-    return curElem > 10;
+// })
+// console.log(arr2);
 
-})
-console.log(arr2);
+
+// let arr = [5, 6, 7];
+// let sum = arr.reduce((accumulator, curElem, index , arr) =>{
+//      return accumulator += curElem;
+
+// })
+// console.log(sum);
+
+
+//!---------------String-------------------------------
+
+// let myname = 'satya';
+// console.log(myname)
+
+//?------------Escape character-----------------------
+
+
+// let anysentence = "we are so called \"Vikings\" from the north."
+// console.log(anysentence)
+
+
+//or============
+
+
+// let anysentence = 'we are so called \"Vikings\" from the north.'
+// console.log(anysentence)
+
+
+//?--------Extracting String part---------------------
+
+//*-------slice method----------------
+
+//1.Display only 280 character of a string like the one used in Twitter?
+
+// let myTweet = "saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijiowe saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijiowe saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijiowe saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijiowe saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijiowe saya jiisi iojopd ioje ocowic ocjwsc copwejfwpodc ciowejckmw jcowejdwej cnwjecowem jowejcwemc jwejcwem jwejcopwe j0woejcowej omncwej cjewpokcpw jcweokcpweo oijio"
+
+// let MyActualTweet = myTweet.slice(0, 280);
+// console.log(MyActualTweet)
+// console.log(MyActualTweet.length);
+
+
+//*----------NewDate()--------------------------
+
+//let currDate = new Date()
+//console.log(new Date().toLocaleString());
+
+
+//*============Dom==============================
+
+// ************** DOM vs BOM *******************
+
+// 👉 The DOM is the Document Object Model, which deals with the document, 
+// the HTML elements themselves, e.g. document and all traversal you 
+// would do in it, events, etc.
+
+// For Ex: 👨‍🏫
+// change the background color to red
+// document.body.style.background = "red";
+
+
+// 👉 The BOM is the Browser Object Model, which deals with browser components 
+// aside from the document, like history, location, navigator and screen 
+// (as well as some others that vary by browser). OR 
+// In simple meaning all the Window operations which comes under BOM are performed 
+// usign BOM 
+
+
+
+// Functions alert/confirm/prompt are also a part of BOM: 
+// they are directly not related to the document, 
+// but represent pure browser methods of communicating with the user.
+
+// alert(location.href); // shows current URL
+// if (confirm("Want to Visit ThapaTechnical?")) {
+//   location.href = "https://www.youtube.com/thapatechnical"; // redirect the browser to another URL
+// }
+
+
+
+// Section 3️⃣: Navigate through the DOM 
+
+// 1: document.documentElement
+      // returns the Element that is the root element of the document. 
+// 2: document.head
+// 3: document.body
+// 4: document.body.childNodes (include tab,enter and whiteSpace)
+  // list of the direct children only 
+// 5: document.children (without text nodes, only regular Elements)
+// 6: document.childNodes.length
+
+// 👉 Practice Time 
+// How to check whether an element has child nodes or not?
+// we will use hasChildNodes()
+
+// 👉 Practice Time 
+// How to find the child in DOM tree 
+// firstChild vs firstElementChild
+// lastChild vs lastElementChild 
+// const data = document.body.firstElementChild;
+// undefined
+// data
+// data.firstElementChild
+// data.firstElementChild.firstElementChild
+// data.firstElementChild.firstElementChild.style.color = "red"
+// vs 
+// document.querySelector(".child-two").style.color = "yellow";
+
+// 👉 How to find the Parent Nodes 
+// document.body.parentNode
+// document.body.parentElement
+
+// 👉 How to find or access the siblings
+// document.body.nextSibling
+// document.body.nextElementSibling
+// document.body.previousSibling
+// document.body.previousElementSibling
+
+
+
+
+
+
