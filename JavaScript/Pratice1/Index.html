@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Todo list</h1>
+
+    <form>
+        <p>Task: <input id="task" type="text" name="Task" placeholder="Write Your Task"></p>
+        <p>Priority:
+            <select id="priority" name="priority">
+                <option value="">Select Your Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </p>
+        <input type="submit"><br><br>
+    </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Task</td>
+                    <td>Priority</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+       <div style="width: 100%; display: flex ; justify-content: center;align-items: center;"> <button id="reset">RESET</button> </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
